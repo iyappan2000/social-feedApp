@@ -46,7 +46,7 @@
 }
 
 .searchbar {
-  width: 70%;
+  width: 100%;
   height: 30px;
   background-color: white;
   border-radius: 30px;
@@ -72,7 +72,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  margin-left: 0px;
+  margin-left: 16px;
   margin-right: 20px;
   object-fit: cover;
   cursor: pointer;
@@ -113,29 +113,14 @@
   justify-content: center;
   font-size: 12px;
 } */
-@media screen and (max-width: 850px) {
-  .topbarContainer {
-    width: 100%;
+@media (max-width: 768px) {
+  .topbarCenter {
+    margin-left: 60px;
   }
-
-  .topbarLeft .icon .iconName {
-    font-size: 5px;
-    font-weight: 100;
+  .searchbar {
+    display: none;
   }
-  .topbarCenter .topbarRight .topbarImg {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 750px) {
-  .topbarContainer {
-    width: 100%;
-  }
-
-  .topbarLeft .icon .iconName {
-    font-size: 5px;
-    font-weight: 100;
-  }
-  .topbarCenter .topbarRight .topbarImg {
-    width: 100%;
+  .addpost {
+    display: none;
   }
 }

@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(80, 12, 12);
+  background-color: #d8e3f1;
+
   height: 56px;
 }
 
@@ -39,7 +40,7 @@
   padding: 0 0.5rem;
 }
 .toolbar_navigation-items a {
-  color: #fff;
+  color: rgb(17, 17, 17);
   text-decoration: none;
 }
 
@@ -60,6 +61,6 @@
   }
 
   .toolbar__logo {
-    margin-right: 10;
+    margin-right: 0;
   }
 }

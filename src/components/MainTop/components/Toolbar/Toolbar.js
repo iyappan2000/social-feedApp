@@ -28,7 +28,9 @@ const Toolbar = (props) => (
       </div>
       <div className="topbarCenter" style={{ display: "flex" }}>
         <RedditIcon style={{ color: "red" }} />
-        <span className="logo">InstaBook</span>
+        <span className="logo" id="toolbar__logo">
+          InstaBook
+        </span>
       </div>
       <div className="spacer" />
       <div className="topbarRight">
@@ -40,12 +42,13 @@ const Toolbar = (props) => (
       <img src="/assets/person/1.jpeg" alt="" className="topbarImg" />
       <button
         style={{
-          padding: "6px 30px",
+          padding: "10px 30px",
           background: "orange",
           border: "transparent",
           cursor: "pointer",
           borderRadius: "10px",
         }}
+        className="addpost"
       >
         Add Post
       </button>
