@@ -1,0 +1,141 @@
+.topbarContainer {
+  height: 60px;
+  width: 100%;
+  background-color: #d8e3f1;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.topbarLeft {
+  /* flex: 5; */
+  font-weight: 400;
+  padding: 10px;
+  font-style: normal;
+  cursor: pointer;
+  display: flex;
+  margin-left: 80px;
+}
+.icon {
+  padding-right: 10px;
+}
+.iconName {
+  font-weight: normal;
+  font-size: 1.2 rem;
+}
+.topbarCenter {
+  text-align: center;
+  margin-left: 250px;
+  /* flex: 2; */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(92, 60, 60);
+  cursor: pointer;
+}
+.topbarRight {
+  /* flex: 4; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.searchbar {
+  width: 70%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+  color: black;
+}
+
+.searchInput {
+  border: none;
+  width: 50%;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+.topbarImg {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-left: 0px;
+  margin-right: 20px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  /* height: 10px; */
+}
+/*
+.topbarLink {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+} */
+@media screen and (max-width: 850px) {
+  .topbarContainer {
+    width: 100%;
+  }
+
+  .topbarLeft .icon .iconName {
+    font-size: 5px;
+    font-weight: 100;
+  }
+  .topbarCenter .topbarRight .topbarImg {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .topbarContainer {
+    width: 100%;
+  }
+
+  .topbarLeft .icon .iconName {
+    font-size: 5px;
+    font-weight: 100;
+  }
+  .topbarCenter .topbarRight .topbarImg {
+    width: 100%;
+  }
+}
