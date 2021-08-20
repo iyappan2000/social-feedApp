@@ -9,7 +9,7 @@ import { useState } from "react";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import MenuIcon from "@material-ui/icons/Menu";
 export default function Topbar() {
-  const [isMobile, setisMobile] = useState(false);
+  const [isMobile] = useState(false);
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">

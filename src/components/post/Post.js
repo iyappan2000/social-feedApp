@@ -1,15 +1,12 @@
 import "./Post.css";
 import { useState } from "react";
-import { Card } from "antd";
-import { MoreVert } from "@material-ui/icons";
+
 import { Users } from "../../dummyData";
-import "antd/dist/antd.css";
-import SendIcon from "@material-ui/icons/Send";
-import ThumbUpAltIcon from "@material-ui/icons/ThumbUpAlt";
+
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import Button from "@material-ui/core/Button";
+
 import FaceIcon from "@material-ui/icons/Face";
 
 export default function Post({ post }) {
