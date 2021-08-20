@@ -2,7 +2,6 @@ import React from "react";
 
 import "./SideDrawer.css";
 import "../../../topbar/Topbar.css";
-import { Search } from "@material-ui/icons";
 
 const SideDrawer = (props) => {
   let drawerClasses = "side-drawer";
@@ -15,7 +14,6 @@ const SideDrawer = (props) => {
       <ul>
         <div>
           <div style={{ marginLeft: "-30px", marginBottom: "20px" }}>
-            <Search className="searchIcon" />
             <input placeholder="Search..." className="searchInput" />
           </div>
         </div>
