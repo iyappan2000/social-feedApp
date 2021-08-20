@@ -1,8 +1,8 @@
 import React from "react";
 
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import RedditIcon from "@material-ui/icons/Reddit";
-import { Search } from "@material-ui/icons";
+
+import { BiSearch } from "react-icons/bi";
 import "../../../topbar/Topbar.css";
 import "./Toolbar.css";
 
@@ -27,7 +27,6 @@ const Toolbar = (props) => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className="topbarCenter" style={{ display: "flex" }}>
-        <RedditIcon style={{ color: "red" }} />
         <span className="logo" id="toolbar__logo">
           InstaBook
         </span>
@@ -35,7 +34,7 @@ const Toolbar = (props) => (
       <div className="spacer" />
       <div className="topbarRight">
         <div className="searchbar">
-          <Search className="searchIcon" />
+          <BiSearch className="searchIcon" />
           <input placeholder="Search..." className="searchInput" />
         </div>
       </div>{" "}
