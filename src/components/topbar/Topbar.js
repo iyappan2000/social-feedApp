@@ -53,20 +53,6 @@ export default function Topbar() {
         >
           Add Post
         </button>
-        {/* <div className="topbarIcons">
-          <div className="topbarIconItem">
-            <Person />
-            <span className="topbarIconBadge">1</span>
-          </div>
-          <div className="topbarIconItem">
-            <span className="topbarIconBadge">2</span>
-          </div>
-          <div className="topbarIconItem">
-            <span className="topbarIconBadge">1</span>
-          </div>
-        </div>
-        
-        */}
       </div>
     </div>
   );
