@@ -17,9 +17,9 @@
   padding: 20px;
   width: 90%;
 }
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
   .feed {
     margin-left: 350px;
     margin-right: 350px;
   }
-}
+} */

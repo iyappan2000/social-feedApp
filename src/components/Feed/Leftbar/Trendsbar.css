@@ -1,0 +1,35 @@
+.trendsBox {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 0px;
+  background: white;
+  border: 1px solid rgb(214, 211, 211);
+}
+.trendsBoxHead {
+  width: 320px;
+}
+.topHead {
+  display: flex;
+}
+.topLeft {
+  padding-left: 15px;
+  font-weight: 600;
+}
+.topRight {
+  float: right;
+  margin-left: 195px;
+  color: orangered;
+}
+.trendsTags {
+  width: 100%;
+
+  margin: 0;
+}
+.trendsTags ul li {
+  list-style: none;
+  padding-bottom: 10px;
+  font-size: 16px;
+  margin-left: -15px;
+  font-weight: bold;
+  color: orange;
+}
