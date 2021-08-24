@@ -3,3 +3,6 @@
   width: 100%;
   background: rgb(240, 251, 252);
 }
+.left {
+  position: fixed;
+}

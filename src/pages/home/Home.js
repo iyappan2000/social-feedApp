@@ -12,9 +12,9 @@ export default function Home() {
     <>
       <MainTop />
       <div className="homeContainer">
-        <Leftbar />
+        <Leftbar className="left" />
         <Feed />
-        <Rightbar />
+        <Rightbar className="left" />
       </div>
     </>
   );

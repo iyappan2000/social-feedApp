@@ -24,13 +24,19 @@ function Trendsbar() {
             <p>Change</p>
           </div>
         </div>{" "}
-        <hr />
         <div className="trendsTags">
           <ul>
             {datas.map((user) => {
               return (
                 <div>
-                  <li key={user.id}></li>
+                  <li key={user.id}>#{user.tags[0].tag}</li>
+                  <li key={user.id}>#{user.tags[1].tag}</li>
+                  <li key={user.id}>#{user.tags[2].tag}</li>
+                  <li key={user.id}>#{user.tags[3].tag}</li>
+                  <li key={user.id}>#{user.tags[4].tag}</li>
+                  <li key={user.id}>#{user.tags[5].tag}</li>
+                  <li key={user.id}>#{user.tags[6].tag}</li>
+                  <li key={user.id}>#{user.tags[7].tag}</li>
                 </div>
               );
             })}

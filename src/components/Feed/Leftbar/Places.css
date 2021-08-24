@@ -1,0 +1,17 @@
+.userlist {
+  padding: 0 0 10px 20px;
+}
+.userlist img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.userlist p {
+  margin-left: 20px;
+  margin-top: -2px;
+}
+.btn {
+  margin-left: 110px;
+  margin-top: -px;
+  color: red;
+}
