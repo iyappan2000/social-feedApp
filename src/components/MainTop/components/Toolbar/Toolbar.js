@@ -6,7 +6,7 @@ import { BiSearch } from "react-icons/bi";
 import "../../../topbar/Topbar.css";
 import "./Toolbar.css";
 
-const Toolbar = (props) => (
+const Toolbar = (props, { handleClick }) => (
   <header className="toolbar">
     <nav className="toolbar__navigation">
       {" "}
@@ -35,7 +35,11 @@ const Toolbar = (props) => (
       <div className="topbarRight">
         <div className="searchbar">
           <BiSearch className="searchIcon" />
-          <input placeholder="Search..." className="searchInput" />
+          <input
+            placeholder="Search..."
+            className="searchInput"
+            onChange={handleClick}
+          />
         </div>
       </div>{" "}
       <img

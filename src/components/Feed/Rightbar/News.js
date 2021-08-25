@@ -14,6 +14,8 @@ function News() {
     const receivedData = await res.json();
     setData([receivedData]);
   }
+  console.log(datas);
+
   return (
     <div className="trendsBox">
       <div className="trendsBoxHead">

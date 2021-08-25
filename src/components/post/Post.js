@@ -1,5 +1,5 @@
 import "./Post.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Users } from "../../dummyData";
 
@@ -8,12 +8,16 @@ import { BiHeart } from "react-icons/bi";
 import { BiChevronDown } from "react-icons/bi";
 import { RiChat4Line } from "react-icons/ri";
 
-export default function Post({ post }) {
+export default function Post({ post, search }) {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
   const [comment, setComment] = useState("");
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState(() => {
+    const localData = localStorage.getItem("comment");
+    return localData ? JSON.parse(localData) : [];
+  }, []);
   const data = comments;
+
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
@@ -22,9 +26,15 @@ export default function Post({ post }) {
   const HandleComment = (e, name) => {
     setComment(e.target.value);
   };
+  useEffect(() => {
+    localStorage.setItem("comment", JSON.stringify(comments));
+  }, [comments]);
+
   const handleSumbit = (e) => {
     e.preventDefault();
+
     setComment("");
+
     addHandler(comment);
   };
   const addHandler = (uName) => {
@@ -33,6 +43,13 @@ export default function Post({ post }) {
     });
   };
 
+  const filteredHandler = (val, usersname) => {
+    if (search === "") {
+      return val;
+    } else if (val.username.toLowerCase().includes(search.toLowerCase())) {
+      return val;
+    }
+  };
   return (
     <div className="post">
       <div className="postWrapper">
@@ -44,7 +61,11 @@ export default function Post({ post }) {
               alt=""
             />
             <span className="postUsername">
-              {Users.filter((u) => u.id === post?.userId)[0].username}
+              {
+                Users.filter((val) =>
+                  filteredHandler(val, val.username)
+                ).filter((u) => u.id === post?.userId)[0].username
+              }
             </span>
             <span className="postDate">{post.date}</span>
           </div>

@@ -13,6 +13,9 @@ function Leftbar() {
         <br />
         <Groups />
       </div>
+      <p style={{ color: "grey", padding: "20px 0 0 30px" }}>
+        Privacy Policy - Terms of Sevice -Maps Terms
+      </p>
     </div>
   );
 }
